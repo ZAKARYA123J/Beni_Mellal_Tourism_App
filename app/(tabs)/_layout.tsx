@@ -2,11 +2,12 @@ import React from "react";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Link, Tabs } from "expo-router";
 import { Pressable } from "react-native";
-
+import { Image } from "expo-image";
 import Colors from "@/constants/Colors";
 import { useColorScheme } from "@/components/useColorScheme";
 import { useClientOnlyValue } from "@/components/useClientOnlyValue";
-
+const blurhash =
+  "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[";
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabBarIcon(props: {
   name: React.ComponentProps<typeof FontAwesome>["name"];
@@ -48,10 +49,11 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen />
       <Tabs.Screen
-        name="two"
+        name="cards"
         options={{
-          title: "Tab Two",
+          title: "Cards",
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />

@@ -1,0 +1,150 @@
+[
+  {
+    "id": "507f1f77bcf86cd799439011",
+    "createdAt": "2025-10-28T10:30:00Z",
+    "name": "Cascades d'Ouzoud",
+    "description": "Les cascades d'Ouzoud sont parmi les plus hautes et les plus spectaculaires du Maroc, avec une chute d'eau de 110 mètres. Situées à environ 150 km au nord-est de Marrakech, elles offrent un paysage naturel époustouflant avec des singes magots vivant librement dans la région.",
+    "coordination": { "latitude": 32.0167, "longitude": -6.7167 },
+    "images": [
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSznc-mzi8VjHE-0cUaARNjKaJXSQF9tE_CHGYOXv5fTiZEGOD8yEkUAedCrfiHNZeQXtTkIYo6-vb420__D6Oh-XbrsdaxsiZkqteKX8IlpJeDYc44tuocZFgFIqE-BwAW-YrG2=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwANSmhb27-Pz_HBbNw7FSUYso9_J62tsXeUtSZGPzkTshymx5V_9G9iz1QGs0m_JBD8IlcMj5usUw-5OK1YR8Q9tgrRiUcNh7IP5BWXaVPdkYdELeS5duSt8Kj86Syv4u54ixh=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwfNa6NPKv3F8HF5u9Qa96RlW4vzevr_Dkj8dpJgjMzRyWGC4YPdXZe5sD_kbBBqA8taO_XtBcEcXipr2mmu1igQy11tYAwMJX4n_iiiR61ozypXkrQQGWKW58qel-HADtXqXI=s1360-w1360-h1020-rw"
+    ],
+    "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSznc-mzi8VjHE-0cUaARNjKaJXSQF9tE_CHGYOXv5fTiZEGOD8yEkUAedCrfiHNZeQXtTkIYo6-vb420__D6Oh-XbrsdaxsiZkqteKX8IlpJeDYc44tuocZFgFIqE-BwAW-YrG2=s1360-w1360-h1020-rw"
+  },
+  {
+    "id": "507f191e810c19729de860ea",
+    "createdAt": "2025-11-02T14:20:00Z",
+    "name": "Ain Asserdoun",
+    "description": "Source naturelle située dans la ville de Beni Mellal, Ain Asserdoun est un jardin verdoyant avec des cascades et des fontaines alimentées par des sources naturelles. C'est un lieu de détente populaire pour les habitants et les visiteurs, offrant une oasis de fraîcheur en été.",
+    "coordination": { "latitude": 32.3394, "longitude": -6.3498 },
+    "images": [
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwwgM4qPCHQUEhp98hSe5XwbzDoO2fw9DZ9Vcpe15-O-H6JHA_qzT2MrK0pbv1PqUf3MEjUCzWg76VIhf60ZQEm3uaYEKB3R3n2E6HjnX6GTi9Mg6_FqavOy9pw6CiiYgDxvzQg7g=s1360-w1360-h1020-rw",
+      "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzXFwIkKb5Tckd7BiHBQzCUnHKVR9wPL5Fxyl68qGQw4ha3UrHd_7GmeDMa2k5IfXoTRIs14cYeignDFsKXisuskNDMwplvozmaAlPEVYLWWtuQ8FhqZG1DNgSD93__vI8vjKkg=s1360-w1360-h1020-rw"
+    ],
+    "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwwgM4qPCHQUEhp98hSe5XwbzDoO2fw9DZ9Vcpe15-O-H6JHA_qzT2MrK0pbv1PqUf3MEjUCzWg76VIhf60ZQEm3uaYEKB3R3n2E6HjnX6GTi9Mg6_FqavOy9pw6CiiYgDxvzQg7g=s1360-w1360-h1020-rw"
+  },
+  {
+    "id": "507f1f77bcf86cd799439012",
+    "createdAt": "2025-10-25T16:45:00Z",
+    "name": "Kasbah Ras El Ain",
+    "description": "Ancienne kasbah située au sommet d'une colline dominant Beni Mellal, offrant une vue panoramique exceptionnelle sur la ville et la plaine du Tadla. Cette forteresse historique témoigne du riche patrimoine architectural de la région.",
+    "coordination": { "latitude": 32.3416, "longitude": -6.3633 },
+    "images": [
+      "https://www.discoverimages.com/p/251/view-garden-ain-asserdoun-kasbah-ras-el-ain-19489379.jpg.webp",
+      "https://moroccospecialtours.com/wp-content/uploads/2024/07/Tangier-to-Fes-and-Chefchaouen-4-Day-Tour-Tour-Morocco-Special-Tours-5.webp"
+    ],
+    "thumbnail": "https://www.discoverimages.com/p/251/view-garden-ain-asserdoun-kasbah-ras-el-ain-19489379.jpg.webp"
+  },
+  {
+    "id": "507f191e810c19729de860eb",
+    "createdAt": "2025-11-01T11:00:00Z",
+    "name": "Lac de Bin el Ouidane",
+    "description": "Magnifique lac de barrage situé dans les montagnes de l'Atlas, à environ 40 km de Beni Mellal. Le lac offre des paysages spectaculaires avec ses eaux turquoise entourées de montagnes. C'est un lieu prisé pour la pêche, les sports nautiques et les randonnées.",
+    "coordination": { "latitude": 32.1167, "longitude": -6.5 },
+    "images": [
+      "https://media.routard.com/image/12/3/pt55500.1265123.w1000.jpg",
+      "https://provinceazilal.ma/wp-content/uploads/2020/09/binlwidane-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/ac/Barrage_Bin_el_Ouidane_1.JPG"
+    ],
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Barrage_Bin_el_Ouidane_1.JPG"
+  },
+  {
+    "id": "507f1f77bcf86cd799439013",
+    "createdAt": "2025-10-30T09:15:00Z",
+    "name": "Cathédrale de Roches",
+    "description": "Formation géologique impressionnante près des cascades d'Ouzoud, ressemblant à une cathédrale naturelle. Les roches sculptées par l'érosion créent des arches et des colonnes spectaculaires qui attirent les photographes et les amateurs de géologie.",
+    "coordination": { "latitude": 32.02, "longitude": -6.72 },
+    "images": [
+      "https://images.ctfassets.net/4c8obikr7ztw/4m1D2lBwyn8QZa94zfabO/a3f917c3c2c95af34190a20e48de59c7/cathedrale_Imsfrane_location_voiture_maroc.jpg",
+      "https://marocvoyagedereve.com/wp-content/uploads/2025/04/Cathedrale-Imsfrane.jpg"
+    ],
+    "thumbnail": "https://images.ctfassets.net/4c8obikr7ztw/4m1D2lBwyn8QZa94zfabO/a3f917c3c2c95af34190a20e48de59c7/cathedrale_Imsfrane_location_voiture_maroc.jpg"
+  },
+  {
+    "id": "507f1f77bcf86cd799439014",
+    "createdAt": "2025-10-27T13:30:00Z",
+    "name": "Jbel Tasemit",
+    "description": "Montagne majestueuse faisant partie du Moyen Atlas, offrant des sentiers de randonnée avec des vues panoramiques sur la région de Beni Mellal. Le sommet culmine à plus de 2000 mètres d'altitude et est populaire auprès des randonneurs locaux.",
+    "coordination": { "latitude": 32.45, "longitude": -6.4 },
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/9/97/Jbel_Tassemit_%E2%B5%9C%E2%B4%B0%E2%B5%99%E2%B5%8E%E2%B5%89%E2%B5%9C_.jpg",
+      "https://s2.wklcdn.com/image_91/2730877/23447577/14911409.400x300.jpg"
+    ],
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/97/Jbel_Tassemit_%E2%B5%9C%E2%B4%B0%E2%B5%99%E2%B5%8E%E2%B5%89%E2%B5%9C_.jpg"
+  },
+  {
+    "id": "507f1f77bcf86cd799439015",
+    "createdAt": "2025-10-29T15:45:00Z",
+    "name": "Souk Sebt de Beni Mellal",
+    "description": "Marché traditionnel hebdomadaire qui se tient tous les samedis, offrant une expérience authentique de la culture locale. On y trouve des produits artisanaux, des fruits et légumes frais, des épices, et des vêtements traditionnels marocains.",
+    "coordination": { "latitude": 32.3373, "longitude": -6.3498 },
+    "images": [
+      "https://static1.mclcm.net/iod/images/v2/69/citytheque/localite_104_114/1200x630_80_300_000000x10x0.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Province_Fkih_Ben_Salah%2C_Morocco_-_panoramio.jpg",
+      "https://example.com/images/souk-sebt-spices.jpg"
+    ],
+    "thumbnail": "https://mintteatrails.com/wp-content/uploads/2021/02/beni-mellal-souk-market.webp"
+  },
+  {
+    "id": "507f1f77bcf86cd799439016",
+    "createdAt": "2025-10-26T10:00:00Z",
+    "name": "Moulin de Tighassaline",
+    "description": "Ancien moulin à eau traditionnel situé dans un cadre verdoyant près de Beni Mellal. Ce site historique témoigne des techniques agricoles traditionnelles de la région et offre un aperçu de la vie rurale marocaine.",
+    "coordination": { "latitude": 32.36, "longitude": -6.38 },
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbYhde80D8-mhvpzpTF8f-A4h-8_BD34kLFw&s",
+      "https://imgservice.meilleureslocations.fr/500x245/g%C3%AEte-rural-%C3%A0-jnane-ima-ma-jnane-imes-bc-13747722-0.jpg"
+    ],
+    "thumbnail": "https://imgservice.meilleureslocations.fr/500x245/g%C3%AEte-rural-%C3%A0-jnane-ima-ma-jnane-imes-bc-13747722-0.jpg"
+  },
+  {
+    "id": "507f1f77bcf86cd799439017",
+    "createdAt": "2025-10-24T14:30:00Z",
+    "name": "Jardin Public de Beni Mellal",
+    "description": "Parc urbain agréable au cœur de la ville, idéal pour les promenades familiales et la détente. Le jardin dispose d'allées ombragées, de fontaines et d'espaces verts bien entretenus où les habitants aiment se retrouver.",
+    "coordination": { "latitude": 32.3373, "longitude": -6.3598 },
+    "images": [
+      "https://example.com/images/jardin-public-1.jpg",
+      "https://example.com/images/jardin-public-fountain.jpg"
+    ],
+    "thumbnail": "https://example.com/images/jardin-public-thumb.jpg"
+  },
+  {
+    "id": "507f1f77bcf86cd799439018",
+    "createdAt": "2025-10-23T11:20:00Z",
+    "name": "Pont de Bin el Ouidane",
+    "description": "Pont impressionnant qui traverse le lac de Bin el Ouidane, offrant des vues spectaculaires sur le barrage et les montagnes environnantes. C'est un point de vue populaire pour la photographie et l'observation du paysage.",
+    "coordination": { "latitude": 32.12, "longitude": -6.505 },
+    "images": [
+      "https://provinceazilal.ma/wp-content/uploads/2020/09/2004_01_bin_el_ouidane_2.jpg",
+      "https://moroccomagics.com/wp-content/uploads/2024/10/Bin-El-Ouidane-Dam.jpg"
+    ],
+    "thumbnail": "https://provinceazilal.ma/wp-content/uploads/2020/09/2004_01_bin_el_ouidane_2.jpg"
+  },
+  {
+    "id": "507f1f77bcf86cd799439019",
+    "createdAt": "2025-10-22T16:00:00Z",
+    "name": "Vallée d'Aït Bouguemaz",
+    "description": "Vallée verdoyante surnommée la 'Vallée Heureuse', connue pour ses villages berbères traditionnels et ses paysages agricoles en terrasses. C'est un lieu idéal pour découvrir la culture berbère authentique et faire des randonnées.",
+    "coordination": { "latitude": 31.9833, "longitude": -6.5 },
+    "images": [
+      "https://www.ecotourisme-trek-maroc.com/wp-content/uploads/2017/07/La-vall%C3%A9e-heureuse-Ait-Bouguemez.jpg",
+      "https://photos.altai-travel.com/1920x1040/ait-bouguemez-adobe-stock-42441.jpg",
+      "https://static.yabiladi.com/files/articles/6e5a7df7d553b25254c530d8363d45aa20171119113651.jpg"
+    ],
+    "thumbnail": "https://photos.altai-travel.com/1920x1040/ait-bouguemez-adobe-stock-42441.jpg"
+  },
+  {
+    "id": "507f1f77bcf86cd799439020",
+    "createdAt": "2025-10-21T09:45:00Z",
+    "name": "Source Ain Taddart",
+    "description": "Source d'eau fraîche nichée dans les collines près de Beni Mellal, entourée de végétation luxuriante. L'endroit est prisé pour les pique-niques et offre une atmosphère paisible loin de l'agitation urbaine.",
+    "coordination": { "latitude": 32.35, "longitude": -6.37 },
+    "images": [
+      "https://media-cdn.tripadvisor.com/media/photo-s/0c/c5/8a/fc/la-grande-piscine.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/e0/ef/75/caption.jpg?w=1100&h=1100&s=1"
+    ],
+    "thumbnail": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/e0/ef/75/caption.jpg?w=1100&h=1100&s=1"
+  }
+]
