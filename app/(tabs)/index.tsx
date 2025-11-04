@@ -1,18 +1,19 @@
 import { StyleSheet } from "react-native";
-
+import { Image } from "expo-image";
 import EditScreenInfo from "@/components/EditScreenInfo";
 import { Text, View } from "@/components/Themed";
-
+const blurhash =
+  "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[";
 export default function TabOneScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
+    <View>
+      <Image
+        style={styles.image}
+        source={require("@/assets/images/camel-4948299 1.png")}
+        placeholder={{ blurhash }}
+        contentFit="cover"
+        transition={1000}
       />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
     </View>
   );
 }
@@ -22,6 +23,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+  },
+  image: {
+    width: 400,
+    height: 200,
+    backgroundColor: "#0553",
   },
   title: {
     fontSize: 20,
