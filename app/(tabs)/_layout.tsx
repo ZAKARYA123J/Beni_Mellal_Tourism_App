@@ -1,11 +1,10 @@
-import React from "react";
+import { useClientOnlyValue } from "@/components/useClientOnlyValue";
+import { useColorScheme } from "@/components/useColorScheme";
+import Colors from "@/constants/Colors";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Link, Tabs } from "expo-router";
+import React from "react";
 import { Pressable } from "react-native";
-import { Image } from "expo-image";
-import Colors from "@/constants/Colors";
-import { useColorScheme } from "@/components/useColorScheme";
-import { useClientOnlyValue } from "@/components/useClientOnlyValue";
 const blurhash =
   "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[";
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
@@ -31,8 +30,10 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Tab fd",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: "Home",
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
+              headerShown: false,  // Hides the header
+                  tabBarStyle: { display: 'none' },  // Hides tab bar for all screens
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -54,7 +55,14 @@ export default function TabLayout() {
         name="cards"
         options={{
           title: "Cards",
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => <TabBarIcon name="image" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="favorit"
+        options={{
+          title: "favorit",
+          tabBarIcon: ({ color }) => <TabBarIcon name="heart" color={color} />,
         }}
       />
     </Tabs>

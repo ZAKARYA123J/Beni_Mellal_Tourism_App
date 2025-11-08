@@ -9,7 +9,8 @@ import {
 } from "react-native";
 import { Image } from "expo-image";
 import { useRouter } from "expo-router";
-
+import Ionicons from "@expo/vector-icons/Ionicons";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 const places = [
   {
     id: "1",
@@ -47,26 +48,63 @@ export default function CardsTab() {
           <View style={styles.textBox}>
             <Text style={styles.title}>{p.name}</Text>
             <Text style={styles.desc}>{p.description}</Text>
-
-            {/* ----------  DETAILS BUTTON  ---------- */}
-            <Pressable
-              style={styles.btn}
-              onPress={() =>
-                router.push({
-                  pathname: "/detail",
-                  params: {
-                    id: p.id,
-                    name: p.name,
-                    description: p.description,
-                    thumbnail: p.thumbnail,
-                    lat: String(p.coordination.latitude), // must be strings
-                    lng: String(p.coordination.longitude),
-                  },
-                })
-              }
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                gap: 10,
+                margin: 10,
+              }}
             >
-              <Text style={styles.btnTxt}>Details</Text>
-            </Pressable>
+              <Pressable
+                style={styles.btn}
+                onPress={() =>
+                  router.push({
+                    pathname: "/detail",
+                    params: {
+                      id: p.id,
+                      name: p.name,
+                      description: p.description,
+                      thumbnail: p.thumbnail,
+                      lat: String(p.coordination.latitude), // must be strings
+                      lng: String(p.coordination.longitude),
+                    },
+                  })
+                }
+              >
+                <View style={{ flexDirection: "row", alignItems: "center" }}>
+                  <Text style={styles.btnTxt}>
+                    Details{" "}
+                    <Ionicons name="arrow-forward" size={16} color="#fff" />
+                  </Text>
+                </View>
+              </Pressable>
+              <Pressable
+                style={styles.btnTxtFavorite}
+                onPress={() =>
+                  router.push({
+                    pathname: "/favorit",
+                    params: {
+                      id: p.id,
+                      name: p.name,
+                      description: p.description,
+                      thumbnail: p.thumbnail,
+                      lat: String(p.coordination.latitude), // must be strings
+                      lng: String(p.coordination.longitude),
+                    },
+                  })
+                }
+              >
+                <View style={{ flexDirection: "row", alignItems: "center" }}>
+                  <Text style={styles.btnTxt}>Favorite </Text>
+                  <MaterialIcons
+                    name="favorite-border"
+                    size={16}
+                    color="white"
+                  />
+                </View>
+              </Pressable>
+            </View>
           </View>
         </View>
       ))}
@@ -78,7 +116,7 @@ export default function CardsTab() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#111" },
+  container: { flex: 1 },
   card: {
     backgroundColor: "#fff",
     borderRadius: 20,
@@ -86,6 +124,9 @@ const styles = StyleSheet.create({
     marginTop: 30,
     overflow: "hidden",
     elevation: 8,
+    borderColor: "#ccc",
+    borderWidth: 1,
+    borderStyle: "solid",
     shadowColor: "#000",
     shadowOpacity: 0.3,
     shadowRadius: 10,
@@ -97,9 +138,25 @@ const styles = StyleSheet.create({
   btn: {
     backgroundColor: "#007aff",
     paddingVertical: 10,
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1,
     paddingHorizontal: 25,
     borderRadius: 8,
     alignSelf: "flex-start",
   },
-  btnTxt: { color: "#fff", fontWeight: "600" },
+  btnTxt: {
+    color: "#fff",
+    fontWeight: "600",
+  },
+  btnTxtFavorite: {
+    backgroundColor: "red",
+    paddingVertical: 10,
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1,
+    paddingHorizontal: 25,
+    borderRadius: 8,
+    alignSelf: "flex-start",
+  },
 });

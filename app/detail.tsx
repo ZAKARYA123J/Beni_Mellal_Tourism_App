@@ -1,16 +1,16 @@
+import { Image } from "expo-image";
+import { useLocalSearchParams } from "expo-router";
 import React from "react";
 import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
   Dimensions,
-  Pressable,
   Linking,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
-import { Image } from "expo-image";
 import MapView, { Marker } from "react-native-maps";
-import { useLocalSearchParams } from "expo-router";
 
 const { width } = Dimensions.get("window");
 
@@ -30,16 +30,11 @@ export default function DetailScreen() {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      {/* 1. big image */}
-      <Image source={{ uri: place.thumbnail }} style={styles.hero} />
-
-      {/* 2. text */}
+      <Image source={{ uri: place.thumbnail as string }} style={styles.hero} />
       <View style={styles.textBox}>
         <Text style={styles.title}>{place.name}</Text>
         <Text style={styles.desc}>{place.description}</Text>
       </View>
-
-      {/* 3. map */}
       <View style={styles.mapFrame}>
         <MapView
           style={styles.map}
@@ -49,18 +44,19 @@ export default function DetailScreen() {
             latitudeDelta: 0.03,
             longitudeDelta: 0.03,
           }}
-          scrollEnabled={false} // keeps it static inside ScrollView
+          scrollEnabled={true} // keeps it static inside ScrollView
         >
-          <Marker coordinate={place.coordination} title={place.name} />
+          <Marker
+            coordinate={place.coordination}
+            title={place.name as string}
+          />
         </MapView>
 
-        {/* 4. button to open native maps */}
         <Pressable style={styles.mapBtn} onPress={openMaps}>
           <Text style={styles.mapBtnTxt}>Ouvrir dans Maps</Text>
         </Pressable>
       </View>
 
-      {/* little bottom space */}
       <View style={{ height: 40 }} />
     </ScrollView>
   );
