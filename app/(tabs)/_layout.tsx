@@ -65,6 +65,15 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <TabBarIcon name="heart" color={color} />,
         }}
       />
+<Tabs.Screen
+  name="detail/[id]"
+  options={{
+    href: null,  // Hides from tab bar
+    title: "Detail",
+    headerShown: true,  // Show the header with back button
+    // headerBackButtonTitle is not supported in Tabs.Screen options
+  }}
+/>
     </Tabs>
   );
 }

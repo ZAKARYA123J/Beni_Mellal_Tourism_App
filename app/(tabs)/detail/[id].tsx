@@ -1,15 +1,15 @@
 // app/detail/[id].tsx
 import { Image } from "expo-image";
-import { useLocalSearchParams } from "expo-router";
-import React from "react";
+import { useLocalSearchParams, useNavigation } from "expo-router";
+import React, { useLayoutEffect } from "react";
 import {
-    Dimensions,
-    Linking,
-    Pressable,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View,
+  Dimensions,
+  Linking,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
 } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 
@@ -28,7 +28,13 @@ const images: { [key: string]: any } = {
 
 export default function DetailScreen() {
   const { id, name, description, lat, lng } = useLocalSearchParams();
+  const navigation = useNavigation();
 
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerTitle: name as string,
+    });
+  }, [navigation, name]);
   // Create a place object for easy access
   const place = {
     name: name as string,
