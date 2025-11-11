@@ -12,9 +12,9 @@ import {
   View,
 } from "react-native";
 import MapView, { Marker } from "react-native-maps";
-
+import Animated, { FadeInRight } from 'react-native-reanimated';
+import { SharedElement } from 'react-navigation-shared-element';
 const { width } = Dimensions.get("window");
-
 // Import all images
 const images: { [key: string]: any } = {
   "Ain Asserdoun": require("@/assets/images/ain_Asserdoun.jpg"),
@@ -27,7 +27,7 @@ const images: { [key: string]: any } = {
 };
 
 export default function DetailScreen() {
-  const {name, description, lat, lng } = useLocalSearchParams();
+  const {name, description, lat, lng,thumbnail } = useLocalSearchParams();
   const navigation = useNavigation();
 
   useLayoutEffect(() => {
@@ -57,31 +57,31 @@ export default function DetailScreen() {
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       
-      <Image
-        source={place.thumbnail}
-        style={styles.hero}
-        contentFit="cover"
-      />
+     <SharedElement id={`place.${name}.image`} style={styles.hero}>
+        <Image source={place.thumbnail} style={styles.hero} contentFit="cover" />
+      </SharedElement>
 
-      <View style={styles.textBox}>
-        <Text style={styles.title}>{place.name}</Text>
-        <Text style={styles.desc}>{place.description}</Text>
-      </View>
+        <Animated.View
+        entering={FadeInRight.delay(300).springify()}
+        style={styles.textBox}
+      >
+        <Text style={styles.title}>{name}</Text>
+        <Text style={styles.desc}>{description}</Text>
+      </Animated.View>
 
-      <View style={styles.mapFrame}>
+    <View style={styles.mapFrame}>
         <MapView
           style={styles.map}
           initialRegion={{
-            latitude: place.coordinates.latitude,
-            longitude: place.coordinates.longitude,
+            latitude: Number(lat),
+            longitude: Number(lng),
             latitudeDelta: 0.03,
             longitudeDelta: 0.03,
           }}
         >
           <Marker
-            coordinate={place.coordinates}
-            title={place.name}
-            description={place.description}
+            coordinate={{ latitude: Number(lat), longitude: Number(lng) }}
+            title={name as string}
           />
         </MapView>
         <Pressable style={styles.mapBtn} onPress={openMaps}>

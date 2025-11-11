@@ -21,13 +21,11 @@ import Animated, {
   withSequence,
   withSpring,
 } from "react-native-reanimated";
-
 const blurhash =
   "|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayj[ayayj[fQj[ayayj[ayfjj[j[ayjuayj[";
 
 const { width } = Dimensions.get("window");
 
-/* ----------  animated heart component  ---------------------------------- */
 function AnimatedHeart({ active }: { active: boolean }) {
   const scale = useSharedValue(1);
 
@@ -66,7 +64,19 @@ export default function TabOneScreen() {
     isFavorite(id) ? removeFavorite(id) : addFavorite(id);
 
   const categories = ["Nature", "Waterfalls", "Historic Sites", "Parks", "Culture"];
-
+const navigateToDetail = (id: number) => {
+  const p = places[id]!;
+  router.push({
+    pathname: `/detail/${id}`,
+    params: {
+      name: p.name,
+      description: p.description,
+      thumbnail: p.thumbnail,        // still passed for fallback
+      lat: p.lat.toString(),
+      lng: p.lng.toString(),
+    },
+  } as any);
+};
   return (
     <View style={styles.container}>
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
@@ -82,7 +92,7 @@ export default function TabOneScreen() {
       </View>
 
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scroll}>
-        {/* ---- hero ------------------------------------------------------ */}
+       
         <View style={styles.heroWrap}>
           <Image
             style={styles.hero}
@@ -97,7 +107,6 @@ export default function TabOneScreen() {
           </View>
         </View>
 
-        {/* ---- category pills -------------------------------------------- */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.catRow}>
           {categories.map((c) => (
             <Pressable key={c} style={styles.pill}>
