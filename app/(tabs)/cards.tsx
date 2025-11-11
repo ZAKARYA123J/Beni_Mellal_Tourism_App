@@ -1,16 +1,15 @@
-import React from "react";
-import {
-  ScrollView,
-  View,
-  Text,
-  Pressable,
-  Dimensions,
-  StyleSheet,
-} from "react-native";
-import { Image } from "expo-image";
-import { useRouter } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { Image } from "expo-image";
+import { useRouter } from "expo-router";
+import React from "react";
+import {
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View
+} from "react-native";
 const places = [
   {
     id: "1",
@@ -58,19 +57,19 @@ export default function CardsTab() {
             >
               <Pressable
                 style={styles.btn}
-                onPress={() =>
-                  router.push({
-                    pathname: "/detail",
-                    params: {
-                      id: p.id,
-                      name: p.name,
-                      description: p.description,
-                      thumbnail: p.thumbnail,
-                      lat: String(p.coordination.latitude), // must be strings
-                      lng: String(p.coordination.longitude),
-                    },
-                  })
-                }
+                // onPress={() =>
+                //   router.push({
+                //     pathname: "/detail",
+                //     params: {
+                //       id: p.id,
+                //       name: p.name,
+                //       description: p.description,
+                //       thumbnail: p.thumbnail,
+                //       lat: String(p.coordination.latitude), // must be strings
+                //       lng: String(p.coordination.longitude),
+                //     },
+                //   })
+                // }
               >
                 <View style={{ flexDirection: "row", alignItems: "center" }}>
                   <Text style={styles.btnTxt}>

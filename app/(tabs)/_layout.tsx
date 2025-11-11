@@ -32,8 +32,8 @@ export default function TabLayout() {
         options={{
           title: "Home",
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
-              headerShown: false,  // Hides the header
-                  tabBarStyle: { display: 'none' },  // Hides tab bar for all screens
+              headerShown: false, 
+                  tabBarStyle: { display: 'none' },  
           headerRight: () => (
             <Link href="/modal" asChild>
               <Pressable>
@@ -70,8 +70,8 @@ export default function TabLayout() {
   options={{
     href: null,  // Hides from tab bar
     title: "Detail",
-    headerShown: true,  // Show the header with back button
-    // headerBackButtonTitle is not supported in Tabs.Screen options
+    headerShown: true,  // 
+    // headerBackButtonTitle 
   }}
 />
     </Tabs>

@@ -27,7 +27,7 @@ const images: { [key: string]: any } = {
 };
 
 export default function DetailScreen() {
-  const { id, name, description, lat, lng } = useLocalSearchParams();
+  const {name, description, lat, lng } = useLocalSearchParams();
   const navigation = useNavigation();
 
   useLayoutEffect(() => {
@@ -56,20 +56,18 @@ export default function DetailScreen() {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      {/* Hero Image */}
+      
       <Image
         source={place.thumbnail}
         style={styles.hero}
         contentFit="cover"
       />
 
-      {/* Title and Description */}
       <View style={styles.textBox}>
         <Text style={styles.title}>{place.name}</Text>
         <Text style={styles.desc}>{place.description}</Text>
       </View>
 
-      {/* Map Section */}
       <View style={styles.mapFrame}>
         <MapView
           style={styles.map}
@@ -95,8 +93,6 @@ export default function DetailScreen() {
     </ScrollView>
   );
 }
-
-/* ---------------- styles ---------------- */
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#fff" },
   hero: { width, height: width * 0.7 },
